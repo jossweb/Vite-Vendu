@@ -1,15 +1,97 @@
 @import url("assets.css");
-
 body{
     display: flex;
     justify-content: center; 
     align-items: center;
-    height: 100vh; 
+    height: 100vh;
 }
 .connection-panel{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    align-items: top;
     width: 40%;
     max-width: 800px;
-    height: 90vh;
+    height: auto;
     max-height: 800px;
+    border: 1px solid var(--border-color);
+    border-radius: 20px;
+}
+.connection-panel h1{
+    margin-top: 20px;
+    font-size: 2.5rem;
+}
+.connection-panel h2{
+    font-size: 1.2rem;
+    color: #555;
+    font-weight: lighter;
+}
+.connection-panel .toggle{
     display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    background-color: #f1f1f1;
+    border: 1px solid var(--border-color);
+    width: 75%;
+    border-radius: 20px;
+    margin-top: 30px;
+}
+.connection-panel .toggle button{
+    width: 50%;
+    height: 100%;
+    background-color: transparent;
+    border: none;
+    font-size: 1.25rem;   
+}
+.connection-panel .toggle .left{
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-right: solid 1px #ccc;
+}
+.connection-panel .toggle .right{
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-left: solid 1px #ccc;
+}
+.connection-panel .toggle .isSelect{
+    background-image: linear-gradient(to right, var(--color1), var(--color2));
+}
+.connection-panel .toggle .isSelect button{
+    color: white;
+}
+.connection-panel form{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 30px;
+    width: 100%;
+}
+.connection-panel form input{
+    width: 70%;
+    height: 40px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    padding: 0 10px;
+    margin-bottom: 20px;
+}
+.connection-panel form label {
+    display: block;
+    text-align: left;
+    width: 70%;
+    margin-bottom: 5px;
+    font-size: 0.8rem;
+}
+.connection-panel form .button {
+    margin-top: 15px;
+    width: 75%;
+    height: 40px;
+}
+.connection-panel form .missPass{
+    margin-top: 10px;
+    font-size: 0.8rem;
+    padding-top: 10px;
+    padding-bottom: 40px;
 }

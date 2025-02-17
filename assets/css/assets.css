@@ -1,4 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Next:ital,wght@0,200..800;1,200..800&display=swap');
+:root {
+    --background-color: #fff;
+    --text-color: #000;
+    --border-color: #ccc;
+    --color1: #489E53;
+    --color2: #30937A;
+}
 *{
     margin: 0;
     padding: 0;
+}
+body{
+    background-color: var(--background-color);
+    color: var(--text-color);
+    font-family: "Atkinson Hyperlegible Next", serif;
+}
+a{
+    color: var(--text-color);
+    text-decoration: none;
+}
+.button{
+    background-image: linear-gradient(to right, var(--color1), var(--color2));
+    color: white;
+    border: solid var(--text-color) 1px;
+    border-radius: 30px;
 }
