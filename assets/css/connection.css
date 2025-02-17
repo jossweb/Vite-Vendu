@@ -1,0 +1,15 @@
+@import url("assets.css");
+
+body{
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    height: 100vh; 
+}
+.connection-panel{
+    width: 40%;
+    max-width: 800px;
+    height: 90vh;
+    max-height: 800px;
+    display: flex;
+}
