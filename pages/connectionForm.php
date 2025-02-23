@@ -13,8 +13,14 @@
 </head>
 <body>
     <section class="connection-panel" id="connection">
-        <h1>Connexion</h1>
-        <h2>Connectez-vous à votre compte</h2>
+        <div id="login-header">
+            <h1>Connexion</h1>
+            <h2>Connectez-vous à votre compte</h2>
+        </div>
+        <div id="register-header">
+            <h1>Inscription</h1>
+            <h2>Pas encore de compte ? Créez en un dès maintenant !</h2>
+        </div>
         
         <div class="toggle">
             <button class="left isSelect" onclick="toggleForm(false)" id="login-btn">Connection</button>
@@ -30,16 +36,23 @@
             <a href="#"><p class="missPass">Mot de passe oublié ?</p></a>
         </form>
         <form method="POST" id="register-form">
-            <label>nom</label>
-            <input type="text" name="email" required>
-            <label>prénom</label>
-            <input type="text" name="email" required>
+            <div class="names">
+                <div class="field">
+                    <label>Nom</label>
+                    <input type="text" name="nom" required>
+                </div>
+                <div class="field">
+                    <label>Prénom</label>
+                    <input type="text" name="prenom" required>
+                </div>
+            </div>
             <label>Adresse e-mail</label>
             <input type="text" name="email" required>
             <label>Mot de passe</label>
             <input type="password" name="password" required>
+            <label>Confirmer le mot de passe</label>
+            <input type="password" name="password" required>
             <button type="submit" class="button">S'inscrire</button>
-            <a href="#"><p class="missPass">Mot de passe oublié ?</p></a>
         </form>
     </section>
 </body>

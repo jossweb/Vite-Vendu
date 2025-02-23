@@ -19,6 +19,7 @@ body{
     border-radius: 20px;
 }
 .connection-panel h1{
+    text-align: center;
     margin-top: 20px;
     font-size: 2.5rem;
 }
@@ -26,6 +27,9 @@ body{
     font-size: 1.2rem;
     color: #555;
     font-weight: lighter;
+}
+.connection-panel #register-header{
+    display: none;
 }
 .connection-panel .toggle{
     display: flex;
@@ -67,10 +71,11 @@ body{
     justify-content: flex-start;
     align-items: center;
     margin-top: 30px;
-    width: 100%;
+    width: 75%;
 }
 .connection-panel form input{
-    width: 70%;
+    box-sizing: border-box;
+    width: 100%;
     height: 40px;
     border: 1px solid #ccc;
     border-radius: 20px;
@@ -80,14 +85,15 @@ body{
 .connection-panel form label {
     display: block;
     text-align: left;
-    width: 70%;
+    width: 100%;
     margin-bottom: 5px;
     font-size: 0.8rem;
 }
 .connection-panel form .button {
     margin-top: 15px;
-    width: 75%;
+    width: 100%;
     height: 40px;
+    margin-bottom: 20px;
 }
 .connection-panel form .missPass{
     margin-top: 10px;
@@ -97,4 +103,21 @@ body{
 }
 #register-form{
     display: none;
+}
+.connection-panel form .names{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    flex-direction: row;
+}
+.connection-panel form .names label {
+    width: 30%;
+}
+.connection-panel form .names input {
+    width: 100%;
+}
+.connection-panel form .names .field {
+    display: flex;
+    flex-direction: column;
+    width: 45%; 
 }
